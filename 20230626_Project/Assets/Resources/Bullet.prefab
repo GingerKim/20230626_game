@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1892248664110508040}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: BULLET
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +152,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
+        value: 0.8297882
         inSlope: 1.1726942
         outSlope: 1.1726942
         tangentMode: 0
@@ -160,14 +160,14 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.78111184
       - serializedVersion: 3
-        time: 0.08983779
-        value: 0.22781786
-        inSlope: -0.10003987
-        outSlope: -0.10003987
+        time: 0.07120257
+        value: 0.1497894
+        inSlope: 4.457451
+        outSlope: 4.457451
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 0.39531574
       - serializedVersion: 3
         time: 0.44411063
         value: 0

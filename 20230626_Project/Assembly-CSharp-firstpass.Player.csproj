@@ -769,6 +769,10 @@
       <Project>{B675F4AA-4679-E36A-438A-B7F57C5C7B68}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.Player.csproj">
+      <Project>{56B670E8-99EF-3430-63A4-FD13EAB97E57}</Project>
+      <Name>Unity.AI.Navigation.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
       <Project>{FEA88279-935D-255D-56DB-0E09C9D80383}</Project>
       <Name>Unity.TextMeshPro.Player</Name>

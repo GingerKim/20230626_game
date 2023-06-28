@@ -59,9 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\02_Scripts\ZomBieCtrl.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
+    <Compile Include="Assets\07_Effects\Effect Examples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+    <Compile Include="Assets\02_Scripts\ContainerCtrl.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\02_Scripts\LightOnOff.cs" />
     <Compile Include="Assets\02_Scripts\FireCtrl.cs" />
@@ -73,7 +76,12 @@
     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\07_Effects\Effect Examples\Misc Effects\Prefabs\Readme_Dissolve_Respawn_.txt" />
     <None Include="Assets\CombatSG\meshes\animList.txt" />
+    <None Include="Assets\07_Effects\Effect Examples\Magic Effects\Shaders\Ice.shader" />
+    <None Include="Assets\07_Effects\Effect Examples\Misc Effects\Shaders\Respawn.shader" />
+    <None Include="Assets\07_Effects\Effect Examples\Misc Effects\Shaders\FireFly.shader" />
+    <None Include="Assets\07_Effects\Effect Examples\Misc Effects\Shaders\Dissolve.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -659,6 +667,10 @@
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
       <Project>{B675F4AA-4679-E36A-438A-B7F57C5C7B68}</Project>
       <Name>UnityEngine.UI.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.Player.csproj">
+      <Project>{56B670E8-99EF-3430-63A4-FD13EAB97E57}</Project>
+      <Name>Unity.AI.Navigation.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
       <Project>{FEA88279-935D-255D-56DB-0E09C9D80383}</Project>

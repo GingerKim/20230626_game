@@ -9,6 +9,10 @@ public class HandAniMotion : MonoBehaviour
 {
     [SerializeField] // private라도 인스펙터에 보임
     private Animation CombatSg;
+    public static bool isRunning = false;
+              // 달리고 있는 중인지 아닌지 판단
+              // static은 전역변수임. 전역은 전 지역, 전체의 클래스에서 접근이 가능하다
+              // 또한 메모리가 미리 할당된다. 때문에 프로그램 종료시까지 
 
     void Start()
     {
@@ -20,11 +24,13 @@ public class HandAniMotion : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W))
         {
             CombatSg.Play("running");
+            isRunning = true; // 달리는 중
         }
         // else if 왼쪽 쉬프트키에서 손을 떼었다면
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             CombatSg.Play("runStop");
+            isRunning = false; // 달리지 않는 중
         } 
     }
 }
