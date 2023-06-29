@@ -14,9 +14,11 @@ public class FireCtrl : MonoBehaviour
     [SerializeField] private AudioClip fireSound;
     [SerializeField] private ParticleSystem MuzzleFlash;
     [SerializeField] private ParticleSystem CartridgeEjectEffect;
+    [SerializeField] private Animation Ani;
 
     void Start()
     {
+        Ani = transform.GetChild(0).GetChild(0).GetComponent<Animation>();
         FirePos = transform.GetChild(0).GetChild(0).GetChild(5).GetComponent<Transform>();
         MuzzleFlash = transform.GetChild(0).GetChild(0).GetChild(5).GetChild(0).GetComponent<ParticleSystem>();
         CartridgeEjectEffect = transform.GetChild(0).GetChild(0).GetChild(5).GetChild(1).GetComponent<ParticleSystem>();
@@ -42,6 +44,7 @@ public class FireCtrl : MonoBehaviour
                 source.PlayOneShot(fireSound, 1.0f);
                 MuzzleFlash.Play();
                 CartridgeEjectEffect.Play();
+                Ani.Play("fire");
             }
         }
         else if(Input.GetMouseButtonUp(0)) // ¿ÞÂÊ ¸¶¿ì½º ¹öÆ°À» ´­·¶´Ù ¶¼¾ú´Ù¸é
