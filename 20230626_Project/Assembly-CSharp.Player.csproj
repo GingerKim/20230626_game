@@ -60,6 +60,8 @@
   <ItemGroup>
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\02_Scripts\ZomBieCtrl.cs" />
+    <Compile Include="Assets\02_Scripts\LookAtCamera.cs" />
+    <Compile Include="Assets\02_Scripts\GameManager.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\07_Effects\Effect Examples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -663,13 +665,13 @@
       <Project>{CD493B32-08AE-3DAF-F4E1-EFCA3AF59241}</Project>
       <Name>Assembly-CSharp-firstpass.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.AI.Navigation.Player.csproj">
-      <Project>{56B670E8-99EF-3430-63A4-FD13EAB97E57}</Project>
-      <Name>Unity.AI.Navigation.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Runtime.Player.csproj">
       <Project>{38C14946-13FA-CB64-4EC1-06F9E971F009}</Project>
       <Name>Unity.Postprocessing.Runtime.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.Player.csproj">
+      <Project>{56B670E8-99EF-3430-63A4-FD13EAB97E57}</Project>
+      <Name>Unity.AI.Navigation.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Player.csproj">
       <Project>{A2DD8071-9626-4662-E231-131E869C9A54}</Project>

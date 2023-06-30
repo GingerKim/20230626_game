@@ -825,17 +825,17 @@
       <Project>{098124C2-51AE-D74A-48FC-75046499E677}</Project>
       <Name>Unity.EditorCoroutines.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.AI.Navigation.csproj">
-      <Project>{83B5C5D5-1401-93DB-FC9C-776D8D2A280B}</Project>
-      <Name>Unity.AI.Navigation</Name>
+    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
+      <Project>{C8613B2E-6AFF-6D50-56A7-E759304995B9}</Project>
+      <Name>Unity.Postprocessing.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
       <Project>{33D99DDC-CBA3-2866-4517-4985FFF64EF9}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
-      <Project>{C8613B2E-6AFF-6D50-56A7-E759304995B9}</Project>
-      <Name>Unity.Postprocessing.Runtime</Name>
+    <ProjectReference Include="Unity.AI.Navigation.csproj">
+      <Project>{83B5C5D5-1401-93DB-FC9C-776D8D2A280B}</Project>
+      <Name>Unity.AI.Navigation</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
       <Project>{FFA337BE-7841-B428-75BA-50A53C4F24E4}</Project>
@@ -905,13 +905,13 @@
       <Project>{72E80899-8889-4B2F-96EB-0D8D251638C9}</Project>
       <Name>Unity.AI.Navigation.Updater</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
-      <Project>{F77EF346-2723-192D-E0E9-4DCFC973DDFB}</Project>
-      <Name>Unity.VisualScripting.State.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
       <Project>{A0E80350-4230-3694-5710-8A60EE034092}</Project>
       <Name>Unity.Postprocessing.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
+      <Project>{F77EF346-2723-192D-E0E9-4DCFC973DDFB}</Project>
+      <Name>Unity.VisualScripting.State.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{5C700AB2-D544-88E3-51D5-685C4285860A}</Project>
