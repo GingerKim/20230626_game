@@ -17,6 +17,8 @@ public class ZombieDamage : MonoBehaviour
     [SerializeField] private Image hpBar;
     [SerializeField] private Text hpTxT;
 
+    public SphereCollider zombCol;
+
     void Start()
     {
         UIcanvas = transform.GetChild(18).GetComponent<Canvas>();

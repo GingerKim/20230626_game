@@ -15,7 +15,9 @@ public class SkeletonCtrl : MonoBehaviour
     private Transform playertr;     // 플레이어를 공격해야 하기 때문에 플레이어의 위치가 필요
     public float attackDist = 3.5f;   // 해골이 칼로 공격하기 때문에 공격하기 위해서 또한 공격하려면 3.5 정도의 거리가 필요.
     public float traceDist = 15.0f;   // 해골이 플레이어를 쫒기 위해 인식하는거리
-    
+
+    public BoxCollider swordCol;
+
     void Start()
     {
         skeletontr = transform; // 스켈레톤에 할당된 스크립트이기 때문에 이렇게만 해도 된다.
@@ -47,5 +49,14 @@ public class SkeletonCtrl : MonoBehaviour
             anim.SetBool("IsTrace", false);
 
         }
+    }
+
+    public void SwordColEnable() // 활성화
+    {
+        swordCol.enabled = true;
+    }
+    public void SwordColDlsable() // 비 활성화
+    {
+        swordCol.enabled = false;
     }
 }

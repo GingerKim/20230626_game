@@ -367,6 +367,7 @@
 "Assets/02_Scripts/BulletCtrl.cs"
 "Assets/02_Scripts/ContainerCtrl.cs"
 "Assets/02_Scripts/FireCtrl.cs"
+"Assets/02_Scripts/FPSDamage.cs"
 "Assets/02_Scripts/GameManager.cs"
 "Assets/02_Scripts/HandAniMotion.cs"
 "Assets/02_Scripts/LightChange.cs"

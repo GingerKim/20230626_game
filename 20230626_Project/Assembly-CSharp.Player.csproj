@@ -61,6 +61,7 @@
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\02_Scripts\ZomBieCtrl.cs" />
     <Compile Include="Assets\02_Scripts\LookAtCamera.cs" />
+    <Compile Include="Assets\02_Scripts\FPSDamage.cs" />
     <Compile Include="Assets\02_Scripts\GameManager.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\07_Effects\Effect Examples\Misc Effects\Scripts\SpawnEffect.cs" />

@@ -15,6 +15,7 @@ public class SkeletonDamage : MonoBehaviour
     public float hplmit = 60f;
     public static bool IsDie = false;
 
+
     [SerializeField] private Canvas SkelCanvas;
     [SerializeField] private Image SkelhpBar;
     [SerializeField] private Text SkelhpTxT;

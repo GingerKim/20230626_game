@@ -7,7 +7,7 @@ public class ZomBieCtrl : MonoBehaviour
 {
     [SerializeField]
     private NavMeshAgent agent;
-    [SerializeField]
+    [SerializeField]    
     private Animator animator;
     [SerializeField]
     public float traceDist = 15.0f; // 추적 거리
@@ -15,6 +15,8 @@ public class ZomBieCtrl : MonoBehaviour
     public float attackDist = 3.0f; // 공격 거리
     [SerializeField]
     private Transform playerTr; // 플레이어의 위치 
+
+    public SphereCollider ZomAttackCol;
 
     void Start()
     {
@@ -48,5 +50,13 @@ public class ZomBieCtrl : MonoBehaviour
             agent.isStopped = true;
             animator.SetBool("IsTrace", false);
         }
+    }
+    public void ZomAttColEnable() // 활성화
+    {
+        ZomAttackCol.enabled = true;
+    }
+    public void ZomAttColDlsable() // 비 활성화
+    {
+        ZomAttackCol.enabled = false;
     }
 }
