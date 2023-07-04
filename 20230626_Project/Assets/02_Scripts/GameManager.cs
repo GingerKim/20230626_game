@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 // 좀비와 스켈레톤이 태어나는 로직
 // 1. 좀비와 스켈레톤의 프리펩이 있어야함.
 // 2. 좀비와 스켈레톤이 태어나는 위치.(SpawnPoint로 지정해둠)
@@ -13,12 +14,27 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject zombiePrefab;
     [SerializeField] private GameObject skeletonPrefab;
     [SerializeField] private Transform[] SpawnPoints; // []는 배열로 여러개를 저장할 수 있음.
+    [SerializeField] private Text killTxt;
+    public int Totalkill = 0;
+
+    //     public static GameManager instance;
+    // 싱글톤 사용
+    // 1. public이라고 선언된 변수나 함수에 쉽게 접근하게 아래 this로
+    // 2. 무분별한 객체 생성을 막는다. ''한번만'' 생성되게 한다.
+    // 유니티에서 싱글턴 사용
+    // 매니저 클래스에 사용하게 됨
+    // 매니저 클래스는 게임 전체를 아우를수 있어야하기 때문에 쉽게 접근할 수 있게한다.
+    // 다른 클래스에서 접근하기 쉬어야함.
+    public static GameManager instance;
+
     private float timePrev1 = 0f; // 시간 간격
     private float timePrev2 = 0f; // 시간 간격
     private int maxCount = 5;
 
     void Start()
     {
+        instance = this; // 자기자신(게임매니저 클래스)
+        killTxt = GameObject.Find("Canvas_UI").transform.GetChild(1).GetChild(0).GetComponent<Text>();
         zombiePrefab = Resources.Load<GameObject>("ZomBie");
         skeletonPrefab = Resources.Load<GameObject>("Skeleton");
         SpawnPoints = GameObject.Find("SpawnPoints").GetComponentsInChildren<Transform>(); //SpawnPoints의 여러가지 컴포넌트이기에 복수형임.
@@ -60,5 +76,10 @@ public class GameManager : MonoBehaviour
         Instantiate(skeletonPrefab, SpawnPoints[idx].position, SpawnPoints[idx].rotation);
         //만들어내다,  무엇을,     어디에서(위치),             어떻게(방향이나 회전 등)
 
+    }
+    public void KillScore(int score)
+    {
+        Totalkill += score;
+        killTxt.text = "Kill : " + "<color=#ff0000>" + Totalkill.ToString() + "</color>";
     }
 }

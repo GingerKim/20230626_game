@@ -66,6 +66,7 @@ public class ZombieDamage : MonoBehaviour
         UIcanvas.enabled = false;
 
         Destroy(gameObject, 5.0f);
+        GameManager.instance.KillScore(1);
     }
 
 }
