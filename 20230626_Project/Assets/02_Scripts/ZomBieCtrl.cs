@@ -16,10 +16,11 @@ public class ZomBieCtrl : MonoBehaviour
     [SerializeField]
     private Transform playerTr; // 플레이어의 위치 
 
-    public SphereCollider ZomAttackCol;
+    public BoxCollider puncol;
 
     void Start()
     {
+        puncol = transform.GetChild(0).GetChild(2).GetComponent<BoxCollider>();
         playerTr = GameObject.FindWithTag("Player").transform;
                 // 하이어라키에서 Player라는 태그를 가진 오브젝트의 transform을 playerTr에 대입한다.
         agent = GetComponent<NavMeshAgent>();
@@ -51,12 +52,12 @@ public class ZomBieCtrl : MonoBehaviour
             animator.SetBool("IsTrace", false);
         }
     }
-    public void ZomAttColEnable() // 활성화
+    public void puncolEnable() // 활성화
     {
-        ZomAttackCol.enabled = true;
+        puncol.enabled = true;
     }
-    public void ZomAttColDlsable() // 비 활성화
+    public void puncolDlsable() // 비 활성화
     {
-        ZomAttackCol.enabled = false;
+        puncol.enabled = false;
     }
 }

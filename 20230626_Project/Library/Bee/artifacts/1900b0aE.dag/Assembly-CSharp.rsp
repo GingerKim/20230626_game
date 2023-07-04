@@ -375,6 +375,7 @@
 "Assets/02_Scripts/LookAtCamera.cs"
 "Assets/02_Scripts/SkeletonCtrl.cs"
 "Assets/02_Scripts/SkeletonDamage.cs"
+"Assets/02_Scripts/UIManager.cs"
 "Assets/02_Scripts/ZomBieCtrl.cs"
 "Assets/02_Scripts/ZombieDamage.cs"
 "Assets/07_Effects/Effect Examples/Misc Effects/Scripts/SpawnEffect.cs"

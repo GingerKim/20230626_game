@@ -69,5 +69,7 @@ public class SkeletonDamage : MonoBehaviour
 
         SkelCanvas.enabled = false;
         Destroy(gameObject, 5.0f);
+        
+        GameManager.instance.KillScore(1);// 싱글턴으로 게임매니저에 접근해 인스턴스를 통해 킬 수를 1 올리게 함
     }
 }

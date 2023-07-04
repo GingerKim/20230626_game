@@ -74,6 +74,7 @@
     <Compile Include="Assets\02_Scripts\LightOnOff.cs" />
     <Compile Include="Assets\02_Scripts\FireCtrl.cs" />
     <Compile Include="Assets\02_Scripts\BulletCtrl.cs" />
+    <Compile Include="Assets\02_Scripts\UIManager.cs" />
     <Compile Include="Assets\02_Scripts\HandAniMotion.cs" />
     <Compile Include="Assets\02_Scripts\SkeletonDamage.cs" />
     <Compile Include="Assets\02_Scripts\LightChange.cs" />
